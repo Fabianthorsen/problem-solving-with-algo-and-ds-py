@@ -24,14 +24,12 @@ class Fraction:
     def __add__(self, other) -> Fraction:
         new_num = (self.num * other.den) + (self.den * other.num)
         new_den = self.den * other.den
-        common = gcd(new_num, new_den)
-        return Fraction(new_num // common, new_den // common)
+        return Fraction(new_num, new_den)
 
     def __sub__(self, other) -> Fraction:
         new_num = self.num * other.den - self.den * other.num
         new_den = self.den * other.den
-        common = gcd(new_num, new_den)
-        return Fraction(new_num // common, new_den // common)
+        return Fraction(new_num, new_den)
 
     def __eq__(self, other) -> bool:
         return (self.num * other.den) == (self.den * other.num)
@@ -45,8 +43,7 @@ class Fraction:
     def __mul__(self, other) -> Fraction:
         new_num = self.num * other.num
         new_den = self.den * other.den
-        g = gcd(new_num, new_den)
-        return Fraction(new_num // g, new_den // g)
+        return Fraction(new_num, new_den)
 
     def __truediv__(self, other) -> Fraction:
         return self * Fraction(other.den, other.num)

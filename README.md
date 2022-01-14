@@ -2,6 +2,7 @@
 ### My solutions and examples from the book
 
 ## Chapters progress
+- [x] Introduction and Review
 - [ ] Algorithm Analysis
 - [ ] Basic Data Structures
 - [ ] Recursion

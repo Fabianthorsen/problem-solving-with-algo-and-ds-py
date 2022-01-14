@@ -22,7 +22,7 @@ class Fraction:
         print(str(self))
 
     def __add__(self, other) -> Fraction:
-        new_num = self.num * other.num + self.den * other.num
+        new_num = (self.num * other.den) + (self.den * other.num)
         new_den = self.den * other.den
         common = gcd(new_num, new_den)
         return Fraction(new_num // common, new_den // common)
@@ -54,7 +54,7 @@ class Fraction:
 
 # Test
 Fraction(3, 5).show()
-(Fraction(4, 5) + Fraction(3, 2)).show()
+(Fraction(3, 5) + Fraction(4, 5)).show()
 (Fraction(4, 5) - Fraction(3, 2)).show()
 (Fraction(4, 5) * Fraction(3, 2)).show()
 (Fraction(4, 5) / Fraction(3, 2)).show()

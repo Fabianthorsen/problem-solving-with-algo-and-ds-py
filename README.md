@@ -3,7 +3,7 @@
 
 ## Chapters progress
 - [x] Introduction and Review
-- [ ] Algorithm Analysis
+- [x] Algorithm Analysis
 - [ ] Basic Data Structures
 - [ ] Recursion
 - [ ] Sorting and Searching

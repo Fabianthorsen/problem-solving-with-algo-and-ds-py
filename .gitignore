@@ -246,4 +246,4 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm+iml
 
 # Other ignores
-*/*/notes.md
+*/*/notes/

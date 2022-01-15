@@ -30,7 +30,7 @@
 from stack import Stack
 from string import ascii_uppercase
 
-
+# TODO: Add ability to use ** as token
 def infix_to_postfix(expr: str) -> str:
     prec = {"*": 3, "/": 3, "+": 2, "-": 2, "(": 1}
     op_stack = Stack()

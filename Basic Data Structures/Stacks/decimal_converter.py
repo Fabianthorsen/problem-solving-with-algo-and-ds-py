@@ -1,27 +1,32 @@
 from stack import Stack
 
 
-def divide_by_two(decimal: int) -> str:
+def divide_by_base(decimal: int, base: int) -> str:
+    # Object with all possible digits to be used
+    digits = "0123456789ABCDEF"
+
     #  Stack containing remainder
     rem_stack = Stack()
 
     #  While the decimal number is still not 0
     while decimal > 0:
         # Get the remainder
-        rem = decimal % 2
+        rem = decimal % base
         # Add remainder to stack
         rem_stack.push(rem)
         # Decrement the decimal
-        decimal = decimal // 2
+        decimal = decimal // base
 
-    # initialize the binary string
-    bin_str = ""
+    # initialize the number string
+    number_str = ""
 
     while not rem_stack.is_empty():
         # Pop to string untill stack is empty
-        bin_str += str(rem_stack.pop())
+        number_str += str(digits[rem_stack.pop()])
 
-    return bin_str
+    return number_str
 
 
-print(divide_by_two(123))
+print(divide_by_base(25, 2))
+print(divide_by_base(25, 8))
+print(divide_by_base(25, 16))

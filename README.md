@@ -1,4 +1,4 @@
-# Problem Solving With Algorithms and Data Structures
+# Problem-Solving With Algorithms and Data Structures
 ### My solutions and examples from the book
 
 ## Chapters progress

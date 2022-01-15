@@ -14,6 +14,7 @@ def par_checker(symbol_string: str) -> bool:
             # Push to stack
             s.push(symbol)
         else:
+
             # If not a left parenthesis and stack is empty
             if s.is_empty():
                 # The string isn't balanced

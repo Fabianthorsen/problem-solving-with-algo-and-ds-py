@@ -16,7 +16,7 @@ def pal_checker(string: str) -> bool:
 
     # Populate the deque
     for char in string:
-        char_deque.add_front(char)
+        char_deque.add_front(char)  # Add front since O(1) rather than O(n).
 
     still_equal = True
 

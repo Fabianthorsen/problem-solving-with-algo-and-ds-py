@@ -18,7 +18,7 @@ from queues import Queue
 from printer import Printer, Task
 import random
 
-
+# TODO Implement ability to reflect effect of more students, shorter average length of print task
 def simulation(n_seconds: int, ppm: int) -> None:
     # Initialize printer, queue and waiting times list
     lab_printer = Printer(ppm)

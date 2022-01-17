@@ -1,4 +1,3 @@
-from email.errors import NonPrintableDefect
 from typing import Generic, TypeVar, Optional
 from __future__ import annotations
 
